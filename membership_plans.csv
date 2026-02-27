@@ -1,0 +1,5 @@
+plan_id,plan_name,d_month,price
+1,Basic,3,3000
+2,Standard,6,5000
+3,Premium,12,9000
+4,Elite,12,12000
