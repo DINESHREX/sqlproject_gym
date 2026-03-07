@@ -155,3 +155,14 @@ group by mp.plan_name
 
 -- 30 Show total revenue collected per payment method
 select payment_method ,sum(amount) as total_revenue from payments group by payment_method
+
+
+-- 31 print the second highest amount from payements 
+
+select payment_id,membership_id,amount from payments where amount < (select max(amount) from payments) order by amount desc limit 1
+
+select max(amount) from payments
+
+SELECT DISTINCT amount FROM payments ORDER BY amount DESC limit 1  offset 1
+
+
